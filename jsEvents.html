@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Js Basics</title>
+		<style>
+			div{
+				width:200px;
+				height:200px;
+				background-color: #07AACE;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p id="original">First Para</p>
+			<p id="para1"> Second Para </p>
+			<!-- <img id="dummyImage" src="Desert.jpg" width="300" height="300"> -->
+			<div onmouseover="onMouseHover(this)" onmouseout="onMouseOut(this)">
+			</div>
+
+			
+		
+			<button type="button" id="buttonClick" onclick="changeText()" > Click me</button>
+
+		<script>
+			var data = document.getElementById("para1");
+			var image = document.getElementById("dummyImage");
+
+			function changeText(){
+				data.innerHTML = "I changed on Click";
+				data.style.color = "white";
+				data.style.background = "red";
+				data.style.fontSize = "40px";
+
+				//data.clientHeight
+			}
+
+			function onMouseHover(obj){
+				obj.style.background= "#73C6B6";
+				obj.innerHTML = " On Hover";
+
+			}
+
+			function onMouseOut(obj){
+				obj.style.background= "#45B39D";
+				obj.innerHTML = " On Mouse Out";
+
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>
+

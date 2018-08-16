@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Basics</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<p id="para1">Hi, this is jQuery</p>
+		<p class="para2"> PARA 2</p>
+		<p>PARA 3</p>
+		<p>PARA 4</p>
+		<div id="abc"></div>
+		<div class="xyz"></div>
+		<button>Hide Para</button>
+		
+		<script>
+			$(document).ready(function(){
+
+				$("button").click(function(){
+					$(".para2").hide();
+				});
+
+				/*$("#para1").mouseenter(function(){
+					alert("HIII");
+				});*/
+				$("#para1").mouseleave(function(){
+									alert("Byee");
+				});
+				//$("p").hide()
+			});
+
+			
+			
+		</script>
+	</body>
+</html>
+

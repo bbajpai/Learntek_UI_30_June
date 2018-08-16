@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Basics</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+			#div1{
+				width:300px;
+				height:300px;
+				background-color: #07AACE;
+				/*display:none;*/
+			}
+		</style>
+	</head>
+	<body>
+		<p> Hi! Working on JQuery </p>
+
+		<div id="div1"></div>
+
+		<button id="btn1"> Hide</button>
+		<button id="btn2"> Show</button>
+		<button id="btn3">Show/Hide</button>
+		<button id="btn4">Fade In/Out</button>
+		
+		<script>
+			$(document).ready(function(){
+				$("#btn1").click(function(){
+					$("p").hide(3000);
+				});
+				$("#btn2").click(function(){
+					$("p").show(3000);
+				});
+				$("#btn3").click(function(){
+					$("p").toggle(1000);
+				});
+				$("#btn4").click(function(){
+					$("#div1").fadeToggle(6000);
+				});
+				
+			});
+
+			
+			
+		</script>
+	</body>
+</html>
+

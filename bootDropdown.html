@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Basics</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="dropdown">
+					<button class="btn btn-success dropdown-toggle"
+					 type="button" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-menu-hamburger"></span></button>
+					 <ul class="dropdown-menu">
+					 	<li><a href="#">Category 1</a></li>
+					 	<li class="active"><a href="#">Category 2</a></li>
+					 	<li class="disabled"><a href="#">Category 3</a></li>
+					 	<li><a href="#">Category 4</a></li>
+					 	<li><a href="#">Category 5</a></li>
+					 </ul>
+				</div>
+				<button class="btn btn-primary" data-toggle="collapse" data-target="#show">Show Policy</button>
+				<div class="collapse" id="show">
+					<h4>Privacy Policy</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
+
+<!-- lg - large desktops greater than or equal to 1200px
+md - desktops/laptops equal to or greater than 992px
+sm - small screens like tabs screen size equal to or greater than 768px
+xs - Extra small mobile screen less than 768px -->

@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Js Basics</title>
+	</head>
+	<body>
+		<p id="original"></p>
+		<div id="text1">
+		</div>
+		<p id="para"></p>
+
+		<button type="button" onclick="calculate(40,50)"> Get Sum </button>
+		<button type="button" onclick="getDate()"> Get Date </button>
+		<script>
+
+			var node = document.getElementById("text1");
+			var para = document.getElementById("para");
+			var para2 = document.getElementById("original");
+
+			var arr = ["abc",30, true];
+
+
+			var name = "This is data created by Javascript";
+
+			para2.innerHTML = "Initial string :: " +name;
+			var length = name.length;
+			para.innerHTML = "Length of string is "+length;
+
+			var position = name.indexOf("Java");
+			// node.innerHTML = "Java found at location : " +position;
+
+			var extractedString = name.substr(6,6);
+			node.innerHTML = "Extracted String: " + arr	;
+			arr.pop();
+			arr.pop();
+			arr.push("MMM");
+			arr.push("PPP");
+			arr[1] = "ooooo"
+			para.innerHTML = "New Array is "+arr;
+			/*function calculate(a,b){
+				node.innerHTML = a+b;
+			}
+
+			function getDate(){
+				para.innerHTML = Date();
+			}*/
+			
+			//node.innerHTML = "The sum of two numbers is "+calculate(50,60);
+
+			
+		</script>
+	</body>
+</html>
+

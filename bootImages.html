@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Basics</title>
+	<!-- 	<link href="/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <script src="/bootstrap/js/bootstrap.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="jumbotron">
+					<h2> Bootstrap Images Sample</h2>
+					<p>
+						Bootstarp have 4 classes 
+						1)img-rounded 2)img-circle
+						Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<img src="Desert.jpg" class="img-rounded">
+				<img src="Desert.jpg" class="img-circle">
+				<img src="Desert.jpg" class="img-thumbnail">
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="light.jpg" class="img-responsive">
+				</div>
+				<div class="col-md-6">
+					<button type="button"> Button 1</button>
+					<button type="button" class="btn btn-default"> Button 2</button>
+					<button type="button" class="btn btn-primary"> 
+						<span class="glyphicon glyphicon-home"></span>
+					</button>
+					<button type="button" class="btn btn-success"> 	
+						<span class="glyphicon glyphicon-trash"></span>
+					</button>
+					<button type="button" class="btn btn-danger"> Button 5</button>
+					<button type="button" class="btn btn-info"> Button 6</button>
+					<button type="button" class="btn btn-warning"> Button 6</button>
+
+					<input type="submit" class="btn btn-primary" value="Submit"/>
+
+					<button type="button" class="btn btn-primary btn-lg"> Large Button </button>
+					<button type="button" class="btn btn-primary btn-sm"> Small Button </button>
+					<button type="button" class="btn btn-md disabled"> Medium Button </button>
+
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<button type="button" class="btn btn-primary btn-md btn-block"> Submit Button </button>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
+
+<!-- lg - large desktops greater than or equal to 1200px
+md - desktops/laptops equal to or greater than 992px
+sm - small screens like tabs screen size equal to or greater than 768px
+xs - Extra small mobile screen less than 768px -->

@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Js Basics</title>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div id="container">
+		
+		</div>
+		
+		<script>
+			var container = document.getElementById("container");
+			alert("Hi I am alert");
+			var width = window.innerWidth || document.documentElement.clientWidth;
+
+			//alert("Width is  :: "+width );
+
+			var selection = prompt("Enter User name");
+
+			container.innerHTML = "User writes "+ selection;
+
+
+			document.cookie = "name=Bhumika; expires=Mon,6 Aug 2018 4.00.00";
+
+			var cookieData = document.cookie;
+
+
+			/*if(selection){
+				container.innerHTML = "User selects OK"
+			}
+
+			else{
+				container.innerHTML = "User selects Cancel"
+			}*/
+		</script>
+	</body>
+</html>
+

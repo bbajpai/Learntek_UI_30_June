@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Js Basics</title>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<p id="original">First Para</p>
+			<p id="para1"> Second Para </p>
+		</div>
+		<!-- <button type="button" onclick="openMyWindow()">Open new Window </button> -->
+		<script>
+			var para = document.getElementById("para1");
+			/*var width = window.innerWidth || document.documentElement.clientWidth;
+
+			var height = window.innerHeight || document.documentElement.clientHeight;*/
+
+			var loc = window.location.hostname;
+			para.innerHTML = loc;
+
+
+
+
+			/*function openMyWindow(){
+				window.open("https://www.youtube.com/");
+			}
+*/
+			console.log("Width of screen is "+  width + "  Height of screen is "+ height);
+
+			console.log("The location is "+ location);
+		</script>
+	</body>
+</html>
+

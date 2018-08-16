@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Basics</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="progress">
+						<div class="progress-bar" role="proressbar" aria-valuemin="0" aria-valuemax="100" valuenow="40" style="width:40%">
+							40% completed
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="proressbar" aria-valuemin="0" aria-valuemax="100" valuenow="70" style="width:70%">
+							70% completed
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="progress">
+						<div class="progress-bar progress-bar-warning" role="proressbar" aria-valuemin="0" aria-valuemax="100" valuenow="10" style="width:10%">
+							10%
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger 
+						progress-bar-striped active" role="proressbar" aria-valuemin="0" aria-valuemax="100" valuenow="70" style="width:70%">
+							70%
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="progress">
+						<div class="progress-bar progress-bar-success 
+						progress-bar-striped active" role="proressbar" aria-valuemin="0" aria-valuemax="100" valuenow="70" style="width:70%">
+							70%
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="progress">
+						<div class="progress-bar progress-bar-info 
+						progress-bar-striped" role="proressbar" aria-valuemin="0" aria-valuemax="100" valuenow="70" style="width:70%">
+							70%
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h3> Pagination</h3>
+				<ul class="pagination pagination-sm">
+					<li class="disabled"><a href="#">1</a></li>
+					<li class="active"><a href="bootTables.html">2</a></li>
+					<li><a href="cssTransform.html">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+				</ul>
+				<h3>Breadcrumbs</h3>
+				<ul class="breadcrumb">
+					<li> <a herf="#">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li>Our Clients</li>
+				</ul>
+			</div>
+
+		</div>
+	</body>
+</html>
+
+<!-- lg - large desktops greater than or equal to 1200px
+md - desktops/laptops equal to or greater than 992px
+sm - small screens like tabs screen size equal to or greater than 768px
+xs - Extra small mobile screen less than 768px -->
